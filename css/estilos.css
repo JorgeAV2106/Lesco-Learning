@@ -14,7 +14,7 @@ html, body {
     margin: 0 auto;
     padding-top: 3%;
     height: 60px;
-    width: 100%;
+    width: 80%;
    
     box-sizing: border-box;
 }
@@ -73,7 +73,7 @@ html, body {
 }
 
 .content-carrousel figure {
-    width: 100%;
+    width: 81%;
     height: 95px;
     border: 1px solid #3b444b;
     overflow: hidden;
@@ -132,3 +132,17 @@ html, body {
     position: absolute;
     bottom: 0;
 }
+
+.boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    border-radius: 25px;
+    margin-right: 28px;
+  }
+  .boton_personalizado:hover{
+    text-decoration: none;
+    color: gold;
+  }
