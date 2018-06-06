@@ -7,7 +7,11 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: auto; 
+}
+
+body {
+    background-color: black;
 }
 
 #slideshow {
@@ -144,5 +148,24 @@ html, body {
   }
   .boton_personalizado:hover{
     text-decoration: none;
-    color: gold;
+    color: white;
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+    overflow:hidden;
+  }
+
+  .boton_personalizado2{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    border-radius: 25px;
+  }
+  .boton_personalizado2:hover{
+    text-decoration: none;
+    color: green;
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+    overflow:hidden;
   }
