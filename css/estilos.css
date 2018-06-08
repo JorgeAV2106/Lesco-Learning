@@ -162,6 +162,7 @@ body {
     color: black;
     border-radius: 25px;
   }
+  
   .boton_personalizado2:hover{
     text-decoration: none;
     color: green;
@@ -169,3 +170,36 @@ body {
     transform:scale(1.1);
     overflow:hidden;
   }
+
+  .mynav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-bottom: 50px;
+  }
+   
+  .mynav li:not(:last-child) {
+    margin-right: 200px;
+  }
+   
+  .mynav a {
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    color: black;
+    padding: 7px 15px;
+  }
+   
+  .target {
+    position: absolute;
+    border-bottom: 4px solid transparent;
+    z-index: -1;
+    transform: translateX(-60px);
+  }
+   
+  .mynav a,
+  .target {
+    transition: all .35s ease-in-out;
+  }
+
