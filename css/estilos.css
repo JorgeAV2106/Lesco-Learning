@@ -196,10 +196,16 @@ body {
     border-bottom: 4px solid transparent;
     z-index: -1;
     transform: translateX(-60px);
+    text-decoration: none;
   }
    
   .mynav a,
   .target {
     transition: all .35s ease-in-out;
   }
+
+a.nounderline:link 
+    { 
+    text-decoration:none; 
+    }
 
