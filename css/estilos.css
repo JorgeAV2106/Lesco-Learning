@@ -10,10 +10,6 @@ html, body {
     overflow-y: auto; 
 }
 
-body {
-    background-color: black;
-}
-
 #slideshow {
     margin: 0 auto;
     padding-top: 3%;
@@ -79,7 +75,6 @@ body {
 .content-carrousel figure {
     width: 81%;
     height: 95px;
-    border: 1px solid #3b444b;
     overflow: hidden;
     position: absolute;
 }
@@ -194,11 +189,11 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     list-style-type: none;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
   }
    
   .mynav li:not(:last-child) {
-    margin-right: 200px;
+    margin-right: 100px;
   }
    
   .mynav a {
@@ -206,7 +201,7 @@ body {
     display: block;
     font-size: 20px;
     color: black;
-    padding: 7px 15px;
+    padding: 7px 5px;
   }
    
   .target {

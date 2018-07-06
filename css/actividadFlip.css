@@ -1,4 +1,5 @@
 .image {
+  display: block;
   height: 150px; 
   width: 180px; 
   margin-bottom: 15px;
@@ -13,19 +14,33 @@
   }
 
   .cardface {
+    backface-visibility: hidden; 
     position: absolute;
     height: 100%;
     width: 100%;
-    backface-visibility: hidden; 
+    
   }
 
 
   .card-back {
-    transform: rotateY( 180deg );
-    backface-visibility: hidden; 
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      
   }
 
-  .card.is-flipped:hover {
-    transform: translateX(-100%) rotateY(-180deg);
-    backface-visibility: hidden;
-  }
+.overlay {
+ 
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .3s ease;
+  transform: translate(-50%, -50%);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
