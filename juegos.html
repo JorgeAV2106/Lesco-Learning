@@ -112,6 +112,9 @@
 	<!-- Aqui empieza el contenido de la pag -->
 
 	<section class="container" id="contenidoPrincipal" style="margin-left: 13%; margin-top: 15%; margin-bottom: 15%">
+
+		<h1 id="puntaje" style="text-align:center">Puntaje: </h1>
+		</br>
 		<script>
 			function changeImage(url, imagenOriginal, id) {
 				var imag = url;
@@ -129,6 +132,22 @@
 				}
 
 			}
+
+			var puntaje = 0;
+			var arrayIds = [];
+			function sumarPuntos(id) {
+				
+				if (arrayIds.includes(id)) {
+					
+				}
+				else {
+					arrayIds.push(id);
+					puntaje = puntaje + 5;
+					document.getElementById("puntaje").textContent = "Puntaje: " + puntaje;
+
+				}
+
+			}
 		</script>
 
 		<center>
@@ -141,8 +160,8 @@
 				<center>
 					<div class="card is-flipped">
 						<div id="card-front" class="cardface card-front">
-							<img onclick="changeImage('pictures/result_check.PNG', 'pictures/img_open.PNG', '1')" src="pictures/img_open.PNG" id="1"
-							 name="front" class="image" />
+							<img onclick="changeImage('pictures/result_check.PNG', 'pictures/img_open.PNG', '1'); sumarPuntos('1');" src="pictures/img_open.PNG"
+							 id="1" name="front" class="image" />
 						</div>
 
 
@@ -201,7 +220,7 @@
 				<center>
 					<div class="card is-flipped">
 						<div id="card-front" class="cardface card-front">
-							<img onclick="changeImage('pictures/result_check.PNG', 'pictures/img_abrazo.PNG', '5')" src="pictures/img_abrazo.PNG" id="5"
+							<img onclick="changeImage('pictures/result_check.PNG', 'pictures/img_abrazo.PNG', '5');sumarPuntos('5')" src="pictures/img_abrazo.PNG" id="5"
 							 name="front" class="image" />
 						</div>
 
@@ -248,7 +267,7 @@
 				<center>
 					<div class="card is-flipped">
 						<div id="card-front" class="cardface card-front">
-							<img onclick="changeImage('pictures/result_check.PNG', 'pictures/img_mama.PNG', '8')" src="pictures/img_mama.PNG" id="8"
+							<img onclick="changeImage('pictures/result_check.PNG', 'pictures/img_mama.PNG', '8');sumarPuntos('8')" src="pictures/img_mama.PNG" id="8"
 							 name="front" class="image" />
 						</div>
 
